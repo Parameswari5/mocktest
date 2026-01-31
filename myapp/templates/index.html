@@ -1,0 +1,33 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+  <title>Flask MySQL CRUD</title>
+ </head>
+ <body>
+  <h2>Student List</h2>
+  <form method="POST" action="/add">
+    Name: <input type="text" name="name">
+    Email: <input type="email" name="email">
+    <button type="submit">Add</button>
+  </form>
+  <br>
+  <table border="1" cellpadding="5">
+    <tr><th>ID</th><th>Name</th><th>Email</th><th>Action</th></tr>
+    {% for s in students %}
+    <tr>
+      <td>{{ s[0] }}</td>
+      <td>{{ s[1] }}</td>
+      <td>{{ s[2] }}</td>
+      <td>
+        <form method="POST" action="/update/{{ s[0] }}">
+          <input type="text" name="name" value="{{ s[1] }}">
+          <input type="text" name="email" value="{{ s[2] }}">
+          <button type="submit">Update</button>
+        </form>
+        <a href="/delete/{{ s[0] }}">Delete</a>
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+ </body>
+ </html>

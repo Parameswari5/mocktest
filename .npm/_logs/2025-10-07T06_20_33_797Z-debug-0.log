@@ -1,0 +1,31 @@
+0 verbose cli /usr/bin/node /usr/bin/npm
+1 info using npm@10.8.2
+2 info using node@v18.20.8
+3 silly config load:file:/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/home/ubuntu/node_CRUD/.npmrc
+5 silly config load:file:/home/ubuntu/.npmrc
+6 silly config load:file:/usr/etc/npmrc
+7 verbose title npm init
+8 verbose argv "init" "--yes"
+9 verbose logfile logs-max:10 dir:/home/ubuntu/.npm/_logs/2025-10-07T06_20_33_797Z-
+10 verbose logfile /home/ubuntu/.npm/_logs/2025-10-07T06_20_33_797Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly package data {
+12 silly package data   name: 'node_crud',
+12 silly package data   version: '1.0.0',
+12 silly package data   description: '✅ Add a name   ✅ Get all names   ✅ Get a name by ID   ✅ Update a name   ✅ Delete a name',
+12 silly package data   main: 'server.js',
+12 silly package data   scripts: {
+12 silly package data     test: 'echo "Error: no test specified" && exit 1',
+12 silly package data     start: 'node server.js'
+12 silly package data   },
+12 silly package data   keywords: [],
+12 silly package data   author: '',
+12 silly package data   license: 'ISC'
+12 silly package data }
+13 verbose cwd /home/ubuntu/node_CRUD
+14 verbose os Linux 6.14.0-1014-aws
+15 verbose node v18.20.8
+16 verbose npm  v10.8.2
+17 verbose exit 0
+18 info ok
